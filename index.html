@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hex Converter Tool - DARK FF GHOST</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Particle background -->
+<canvas id="particleCanvas"></canvas>
+
+<!-- Centered Logo + Channel Name -->
+<div id="centerHeader">
+    <img src="logo.png" alt="DARK FF GHOST Logo" class="logo">
+    <h2>DARK FF GHOST</h2>
+</div>
+
+<!-- Menu Screen -->
+<div id="menuScreen" class="screen">
+    <h1>Select Conversion Type</h1>
+    <div class="menu-buttons">
+        <button data-conversion="hexTo0x">Hex → 0x</button>
+        <button data-conversion="hexToDecimal">Hex → Decimal</button>
+        <button data-conversion="hexToBinary">Hex → Binary</button>
+    </div>
+</div>
+
+<!-- Converter Screen -->
+<div id="converterScreen" class="screen hidden">
+    <h1 id="converterTitle">Converter</h1>
+    <textarea id="hexInput" rows="6" placeholder="Enter your hex here..."></textarea>
+
+    <div class="buttons">
+        <button id="convertBtn">Convert</button>
+        <button id="copyBtn">Copy Output</button>
+        <button id="backBtn">Back</button>
+    </div>
+
+    <textarea id="hexOutput" rows="10" placeholder="Converted result will appear here..." readonly></textarea>
+</div>
+
+<script src="particles.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
