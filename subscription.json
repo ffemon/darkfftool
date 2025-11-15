@@ -1,0 +1,19 @@
+{
+  "status": "ON",
+  "version": "1.0",
+  "users": {
+    "ABCDEF-123456-QWERTY": {
+      "expiry": 1893456000000,
+      "status": "active",
+      "credit": "Admin",
+      "device_limit": 1,
+      "devices": {
+        "FF-DEVICE-001": {
+          "last_login": 1693456000000,
+          "login_count": 12,
+          "model": "Realme RMX3085"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">Subscription Admin Panel</div>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h3>Total Users</h3>
+        <h1 id="totalUsers">0</h1>
+    </div>
+
+    <div class="card">
+        <h3>Create Auto Key</h3>
+        <button onclick="autoGenerateKey()">Generate</button>
+        <p id="generatedKey"></p>
+    </div>
+
+</div>
+
+<div class="create-box">
+    <h2>Create New License</h2>
+    <input id="key" placeholder="License Key">
+    <input id="expiry" type="date">
+    <input id="credit" placeholder="Credit (e.g., Admin)">
+    <select id="deviceLimit">
+        <option value="1">1 Device</option>
+        <option value="2">2 Devices</option>
+        <option value="999">Unlimited</option>
+    </select>
+    <button onclick="createKey()">Create</button>
+</div>
+
+<h2 style="text-align:center;margin-top:30px;">All Users</h2>
+
+<div id="list" class="user-list"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
